@@ -1,0 +1,56 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Tahoma, sans-serif;
+    background: #2A7B9B;
+    background: linear-gradient(152deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100%;
+    overscroll-behavior: none;
+
+}
+body {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    width: 95%;
+    max-width: 700px;
+
+}
+hr {
+    border: none;
+    background-color: white;
+    height: 1px;
+    width: 80%;
+    margin: 10px;
+}
+p {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+h2 {
+    color: white;
+}

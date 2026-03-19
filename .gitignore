@@ -1,3 +1,4 @@
 *.code-workspace
 
 .github/workflows/
+.github/workflows/static.yml

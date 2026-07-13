@@ -4,9 +4,14 @@ html, body {
 }
 
 html {
+    --hue-1: 197;
+    --hue-2: 152;
+    --hue-3: 51;
+    --angle: 152deg;
+
     font-family: Tahoma, sans-serif;
     background: #2A7B9B;
-    background: linear-gradient(152deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background: linear-gradient(var(--angle), hsl(var(--hue-1), 57%, 39%) 0%, hsl(var(--hue-2), 51%, 56%) 50%, hsl(var(--hue-3), 82%, 63%) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100%;
@@ -48,6 +53,24 @@ h1 {
     padding: 32px;
     position: relative;
     overflow: hidden;
+    animation: fade-in 0.8s ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .box {
+        animation: none;
+    }
 }
 
 .box::before {
